@@ -35,7 +35,7 @@ export default function Home() {
           fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
         >
           <Link href="https://basecamp.com/gettingreal">getting real 📕</Link>
-          <Link href="https://lostfr8">LOSTFR8 🚚</Link>
+          <Link href="https://lostfr8.com/">LOSTFR8 🚚</Link>
           <Link href="https://www.reedislost.com/">reedislost.com 💻</Link>
         </VStack>
       </Center>

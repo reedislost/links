@@ -18,6 +18,7 @@ export default function Dark() {
   return (
     <Button
       bg="none"
+      size={"sm"}
       _hover={{
         background: "none",
       }}

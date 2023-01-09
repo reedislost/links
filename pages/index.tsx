@@ -40,14 +40,16 @@ export default function Home() {
         </VStack>
       </Center>
       <Center>
-        <HStack
-          fontSize={useBreakpointValue({ base: "3xl", md: "5xl" })}
-          spacing={5}
-        >
-          <Link href="https://twitter.com/lostisreed"> 🐦</Link>
-          <Link href="mailto:reed@lostfr8.com"> 📪</Link>
+        <VStack>
           <Dark />
-        </HStack>
+          <HStack
+            fontSize={useBreakpointValue({ base: "3xl", md: "5xl" })}
+            spacing={5}
+          >
+            <Link href="https://twitter.com/lostisreed"> 🐦</Link>
+            <Link href="mailto:reed@lostfr8.com"> 📪</Link>
+          </HStack>
+        </VStack>
       </Center>
     </>
   );

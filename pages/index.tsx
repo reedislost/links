@@ -11,6 +11,7 @@ import {
   HStack,
   useBreakpointValue,
 } from "@chakra-ui/react";
+import Dark from "../components/Dark";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,6 +46,7 @@ export default function Home() {
         >
           <Link href="https://twitter.com/lostisreed"> 🐦</Link>
           <Link href="mailto:reed@lostfr8.com"> 📪</Link>
+          <Dark />
         </HStack>
       </Center>
     </>

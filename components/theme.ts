@@ -17,10 +17,9 @@ const theme = extendTheme({
     },
   },
 
-  fonts: {
-    heading: `'Open Sans', sans-serif`,
-    body: `'Raleway', sans-serif`,
-  },
+  heading: `Noto Sans`,
+  body: `Noto Sans, Helvetica`,
+  mono: `Noto Sans Mono`,
 });
 
 export default theme;

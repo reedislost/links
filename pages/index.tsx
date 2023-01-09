@@ -22,7 +22,7 @@ export default function Home() {
         <title>reed links</title>
         <meta name="description" content="reed links" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Center minH={"85vh"} flexDirection={"column"}>
         <Box>

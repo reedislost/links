@@ -21,49 +21,36 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>reed links</title>
+        <title>reed site</title>
         <meta name="description" content="reed links" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <Center minH={"85vh"} flexDirection={"column"}>
-        <VStack mt={0}>
-          <Text fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}>
-            ⏩ ⏩
-          </Text>
-          <Box fontSize={useBreakpointValue({ base: "2xl", md: "3xl" })}>
-            <Link href="https://lostfr8.com/" target={"_blank"}>
-              <Text> 🚚</Text>
-            </Link>
-          </Box>
-        </VStack>
-        <VStack mt={24}>
-          <Text fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}>
-            ⏪ ⏪
-          </Text>
-          <Box fontSize={useBreakpointValue({ base: "2xl", md: "3xl" })}>
-            <Link href="https://www.reedislost.com/" target={"_blank"}>
-              {" "}
-              💻
-            </Link>
-            <Link href="https://dudesoup.vercel.app/" target={"_blank"}>
-              {" "}
-              🍜
-            </Link>
-          </Box>
-        </VStack>
-        <VStack mt={24}>
-          <Text fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}>
-            🔗 🔗
-          </Text>
-          <Box fontSize={useBreakpointValue({ base: "2xl", md: "3xl" })}>
-            <Link href="https://basecamp.com/gettingreal" target={"_blank"}>
-              {" "}
-              📕
-            </Link>
-            <Link href="https://fireship.io/" target={"_blank"}></Link>
-          </Box>
-        </VStack>
+      <Center
+        minH={"80vh"}
+        flexDirection={"column"}
+        fontSize={useBreakpointValue({ base: "5xl", md: "7xl" })}
+      >
+        <Text fontSize={useBreakpointValue({ base: "7xl", md: "9xl" })}>
+          🔗
+        </Text>
+        <Link href="https://lostfr8.com/" target={"_blank"}>
+          <Text> 🚚</Text>
+        </Link>
+
+        <Link href="https://www.reedislost.com/" target={"_blank"}>
+          💻
+        </Link>
+        <Link href="https://dudesoup.vercel.app/" target={"_blank"}>
+          {" "}
+          🍜
+        </Link>
+
+        <Link href="https://basecamp.com/gettingreal" target={"_blank"}>
+          {" "}
+          📕
+        </Link>
+        <Link href="https://fireship.io/" target={"_blank"}></Link>
       </Center>
       <Center>
         <VStack>
@@ -72,8 +59,18 @@ export default function Home() {
             fontSize={useBreakpointValue({ base: "3xl", md: "5xl" })}
             spacing={5}
           >
-            <Link href="https://twitter.com/lostisreed"> 🐦</Link>
+            <Link href="https://twitter.com/lostisreed" target={"_blank"}>
+              {" "}
+              🐦
+            </Link>
             <Link href="mailto:reed@lostfr8.com"> 📪</Link>
+            <Link
+              href="https://app.splitbee.io/public/paymemofo.com"
+              target={"_blank"}
+            >
+              {" "}
+              📈
+            </Link>
           </HStack>
         </VStack>
       </Center>

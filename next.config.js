@@ -12,21 +12,12 @@ const withMDX = require("@next/mdx")({
 });
 
 /** @type {import('next').NextConfig} */
-
-module.exports = withMDX({
+const nextConfig = {
+  // Configure pageExtensions to include md and mdx
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+  // Optionally, add any other Next.js config below
   reactStrictMode: true,
-  swcMinify: true,
-  async rewrites() {
-    return [
-      {
-        destination: "https://cdn.splitbee.io/sb.js",
-        source: "/sb.js",
-      },
-      {
-        destination: "https://hive.splitbee.io/:slug",
-        source: "/sb-api/:slug",
-      },
-    ];
-  },
-});
+};
+
+// Merge MDX config with Next.js config
+module.exports = withMDX(nextConfig);

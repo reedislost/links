@@ -27,19 +27,42 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Center minH={"85vh"} flexDirection={"column"}>
-        <Box>
-          <Text fontSize={useBreakpointValue({ base: "5xl", md: "7xl" })}>
-            🔗 LINKS 🔗
+        <VStack mt={0}>
+          <Text fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}>
+            ⏩ ⏩
           </Text>
-        </Box>
-        <VStack
-          mt={9}
-          fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
-        >
-          <Link href="https://basecamp.com/gettingreal">getting real 📕</Link>
-          <Link href="https://lostfr8.com/">LOSTFR8 🚚</Link>
-          <Link href="https://www.reedislost.com/">reedislost.com 💻</Link>
-          <NextLink href={"/blog"}>blog</NextLink>
+          <Box fontSize={useBreakpointValue({ base: "2xl", md: "3xl" })}>
+            <Link href="https://lostfr8.com/" target={"_blank"}>
+              <Text> 🚚</Text>
+            </Link>
+          </Box>
+        </VStack>
+        <VStack mt={24}>
+          <Text fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}>
+            ⏪ ⏪
+          </Text>
+          <Box fontSize={useBreakpointValue({ base: "2xl", md: "3xl" })}>
+            <Link href="https://www.reedislost.com/" target={"_blank"}>
+              {" "}
+              💻
+            </Link>
+            <Link href="https://dudesoup.vercel.app/" target={"_blank"}>
+              {" "}
+              🍜
+            </Link>
+          </Box>
+        </VStack>
+        <VStack mt={24}>
+          <Text fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}>
+            🔗 🔗
+          </Text>
+          <Box fontSize={useBreakpointValue({ base: "2xl", md: "3xl" })}>
+            <Link href="https://basecamp.com/gettingreal" target={"_blank"}>
+              {" "}
+              📕
+            </Link>
+            <Link href="https://fireship.io/" target={"_blank"}></Link>
+          </Box>
         </VStack>
       </Center>
       <Center>
